@@ -1,0 +1,242 @@
+
+  
+  
+
+/* footer  */
+
+footer {
+    
+    width: 100%;
+    background-color: white;
+    color: black;
+ 
+}
+
+.menufooter {
+    height: auto;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.columnas {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px ;
+    text-align: center;
+    margin: 50px;
+ 
+}
+
+.columna {
+
+   height: 200px; 
+   padding:  20px ;
+   text-align: center;
+   align-items: center;
+ 
+   
+}
+
+.columna a{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    color: #000000;
+    text-decoration: none;
+    font-size: 12px;
+    align-items: center;
+    
+   
+   
+}
+
+.title {
+
+    width: auto;
+    padding: 25px 0px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    align-items: center;
+    text-align: center;
+}
+
+.menufooter2 {
+
+    margin: 25px 0px;
+    width: 100%;
+    max-width: 1300px;
+    background-color: white;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+
+.redes-sociales{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.redes-item {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    
+
+}
+
+.redes-item a{
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 5px;
+    margin: 0px 5px;
+
+}
+.redes-item img{
+
+    width: 35px;
+    min-width: 35px;
+    height: 35px;
+    min-height: 35px;
+    
+}
+
+.wpp img{
+
+    
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    margin: 20px;
+    width: 55px;
+    height: 55px;
+    background-color: transparent;
+    z-index: 99999;
+    
+}
+
+
+
+
+
+.piepagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aubeb {
+    padding: 5px 20px;
+    color: #000000;
+    text-decoration: none;
+}
+.terminos {
+    padding: 5px 20px;
+}
+
+.termino-item {
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.termino-item:hover {
+    color: #000000;
+}
+
+
+
+@media (max-width: 780px) {
+
+    footer { 
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menufooter {
+    
+        height: auto;
+        width: 100%;
+        display: flex ;
+        justify-content: flex-start;
+        align-items: center;
+     
+    }
+   
+
+    .columnas {
+        
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 50px 10px;
+        margin: 10px 0px;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        
+}
+
+.redes-sociales{
+    
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+   
+
+}
+
+.redes-item {
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.piepagina {
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+  
+}
+.aubeb {
+    padding: 5px 20px;
+    order: 2;
+}
+.terminos {
+    padding: 15px 0px ;
+    order: 1;
+}
+
+.termino-item {
+    padding: 0px 5px;
+}
+
+
+ }
+
+ 
+
+.abierto svg{
+   width: 40px;
+    
+  }
+  

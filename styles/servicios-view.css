@@ -1,0 +1,151 @@
+* {
+  background-color: white;
+ }
+
+  main {
+    height: auto;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+
+  }
+
+  main.titulo {
+    margin: 20px auto;
+}
+
+    
+    
+    .cartacliente img {
+    
+    height: 80px;
+    width: 230px;
+    
+    }
+    
+    
+    @media (max-width: 930px) {
+    
+    .cartacliente img {
+      margin: 20px 30px;
+      height: 40px;
+      width: 130px;
+    
+    }
+    
+    .cartacliente p {
+    
+      margin: 30px;
+      width: 90%;
+      
+    }
+    }
+    
+    /* tercera seccion */
+    
+    
+    .webs {
+    height: auto;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    
+    }
+    
+    .web {
+    height: auto;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+    align-items: center;
+    justify-content: space-around;
+    
+    }
+    
+    .web img {
+    height: 350px;
+    width: 350px;
+    object-fit:fill;
+    border-radius: 25px;
+    
+    }
+    .introweb {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    }
+    
+    .web .segunda {
+    order: 3;
+    }
+    .web .imagen2  {
+    order: 1;
+    }
+    
+    
+    .web p {
+    
+    margin: 0px 40px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    letter-spacing: 1px;
+    
+    
+    }
+    
+    .web h3 {
+      margin: 30px 0px;
+      color: rgb(7, 95, 153);
+    }
+    
+    
+    @media (max-width: 930px) {
+    
+    
+    .introweb {
+    
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      text-align: center;
+    
+    
+    }
+    
+    .web p {
+      width: auto;
+      margin: 30px;
+     
+    }
+    
+    .web img {
+      height: 250px;
+      width: 250px;
+      margin: 30px ;
+    }
+    
+    .web .segunda {
+      order: 1;
+    }
+    .web .imagen2  {
+      order: 3;
+    }
+    
+    
+    
+    }
+    
+
+    * {
+      background-color: white;
+      color: #000000;
+    }
+  

@@ -1,0 +1,891 @@
+@font-face {
+    font-family: "Yantramanav-Black";
+    src: url(../fonts/Yantramanav-Black.ttf);
+  }      
+
+@font-face {
+  font-family: "Yantramanav-Light";
+  src: url(../fonts/Yantramanav-Light.ttf);
+}      
+
+@font-face {
+  font-family: "Yantramanav-Regular";
+  src: url(../fonts/Yantramanav-Regular.ttf);
+}      
+
+
+
+@font-face {
+  font-family: "Tangerine";
+  src: url(../fonts/Tangerine.ttf)
+
+}  
+@font-face {
+  font-family: "Monsieur";
+  src: url(../fonts/Monsieur.ttf)
+
+}      
+
+   
+    body {
+    
+        font-weight: 300;
+        overflow-y: scroll; 
+    }
+   
+    
+
+ /* body */
+
+
+  body {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0px auto;
+  }
+  
+  a:hover {
+    color: #0c66c0;
+  }
+  .subtitulo1 {
+      
+      width: 100%;
+      max-width: 800px;
+      color:#002918d5;
+      padding: 60px 40px  ;
+      font-size: 35px;
+      letter-spacing: 3px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin: 50px auto;
+      font-family: "Tangerine";
+      background-color: transparent;
+ 
+  
+    }
+  
+  
+    .aside-section{
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      
+      max-width: 1250px;
+    }
+   
+    .section {
+        order: 1 ;
+    }
+    
+    
+    .apartado-frase {
+      display: flex;
+      
+    }
+      
+   
+  
+       
+  
+   @media (max-width: 935px) {
+  
+      .aside{
+        display: none;
+       }
+      
+      
+    }
+    
+    @media (max-width: 680px) {
+    
+       .apartado-frase {
+        display: flex;
+        flex-direction: column;
+    
+      }
+  
+    
+      
+    
+    }
+    
+  
+    
+  .aside{
+      position: relative;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      margin-top: 0px;
+      align-items: center;
+      width: 700px;
+      order: 2;
+     
+    
+    }
+  
+    h1 {
+     
+     padding: 0px ;
+     color: white;
+     margin: auto;
+     font-family: "Yantramanav-Thin";
+   
+    }
+    
+    .container {
+      padding: 32px;
+    }
+   
+    .select-box {
+      position: relative;
+      display: flex;
+      width: 400px;
+      flex-direction: column;
+      
+    }
+    
+    .select-box .options-container {
+      background: #ffffff;
+      color: #031044;
+      max-height: 0;
+      width: 100%;
+      opacity: 0;
+      transition: all 0.4s;
+      border-radius: 8px;
+      overflow: hidden;
+      order: 1;
+      position: absolute;
+      z-index: 100;
+    }
+    
+    .selected {
+      background: #ffffff;
+      border: 5px #d4d4d4 solid;
+      padding: 0px ;
+      border-radius: 40px;
+      margin-bottom: 10px;
+      color: #061136;
+      position: relative;
+      order: 0;
+      
+    }
+  
+  
+  
+    .selected::after {
+      content: "";
+      background: url("../img/arrow-down.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      height: 100%;
+      width: 32px;
+      right: 10px;
+      top: 5px;
+      transition: all 0.4s;
+    }
+    
+    .select-box .options-container.active {
+      max-height: 240px;
+      opacity: 1;
+      overflow-y: scroll;
+      margin-top: 104px;
+    }
+    
+    .select-box .options-container.active + .selected::after {
+      transform: rotateX(180deg);
+      top: -6px;
+    }
+    
+    .select-box .options-container::-webkit-scrollbar {
+      width: 8px;
+      background: white;
+      border-radius: 0 10px 10px 0;
+    }
+    
+    .select-box .options-container::-webkit-scrollbar-thumb {
+      background: #061136;
+      border-radius: 0px ;
+    }
+    
+    .select-box .option,
+    .selected {
+      padding: 15px 16.5px;
+      cursor: pointer;
+      font-family: "Yantramanav-thin";
+      color: #9e9e9e;
+    
+     }
+    .select-box .option:hover {
+      background: rgb(207, 207, 207);
+    }
+    
+    .select-box label {
+      cursor: pointer;
+    }
+    
+    .select-box .option .radio {
+      display: none;
+    }
+    
+  
+    
+    .search-box input  {
+      width: 100%;
+      padding: 15px 20px;
+      font-size: 16px;
+      position: absolute;
+      border-radius: 25px 25px 0 0;
+      z-index: 100;
+      border: 0px solid #000c36e0;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.4s;
+    }
+    
+    .search-box input:focus {
+      outline: none;
+    }
+    
+    .select-box .options-container.active ~ .search-box input {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    
+  
+    .all-enred{
+     
+      display: flex;
+     
+    }
+  
+    a.all ,
+    a.en-red {
+  
+        width: 300px;
+        display: inline-block;
+        background: none;
+        border: none;
+        border-radius: 50px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: 15px ;
+  
+    }
+    
+    
+    .opciones {
+      
+      display: flex;
+      margin: 20px 0px;
+  
+    }
+    
+     a.selecionar ,
+     a.selecionar {
+  
+        width: 150px;
+        font-size: 22px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+        background-color: none;
+        color: #ffffff;
+        border-radius: 50px;
+        padding: 15px 0px;
+    }
+  
+    .btn-buscar  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+    }
+  
+    a.buscar {
+     
+        width: 250px;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px; 
+        color: rgb(255, 255, 255);
+        background-color: #0c66c0;
+        text-align: center;
+        border-radius: 50px;
+        text-decoration: none;
+        margin: 20px 0px;
+        font-size: 20px;
+    }
+    
+    
+    @media (max-width: 980px) {
+  
+      .aside-section {
+          display: flex;
+          flex-direction: column;
+      }
+      
+      .section {
+          order: 2;
+          
+      }
+  
+      .aside{
+          position: relative;
+          margin: none;
+          display: flex;
+          flex-direction: column;
+          margin-top: 0px;
+          align-items: none ;
+          width: 100%;
+          order: 1;
+         
+        
+        }
+  
+        .select-box {
+  
+          
+          display: flex;
+          width: 330px;
+          flex-direction: column;
+          
+        }
+  
+        
+  
+  
+  
+        a.buscar {
+         
+            width: 200px;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 0px; 
+            background-color:  #0c66c0;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 30px 0px;
+            font-size: 14px;
+        }
+        
+    h1 {
+      padding: 15px 0px 5px 0px;
+      font-size: 14px;
+  
+     }
+  
+      
+    .aubeb-apartados-patient:hover,
+    .aubeb-apartados-doctor:hover,
+    .aubeb-apartados-pharmacy:hover,
+    .aubeb-apartados-business:hover,
+    .aubeb-apartados-insurance:hover {
+    
+      
+      margin-right: 0px;
+      transition: 0s;
+     
+    }
+    }
+  
+   
+  
+  
+    .aubeb-apartados-patient,
+    .aubeb-apartados-doctor,
+    .aubeb-apartados-pharmacy,
+    .aubeb-apartados-business,
+    .aubeb-apartados-insurance {
+  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 20px;
+      cursor: pointer;
+  
+     
+    }
+  
+    .toggle-btn {
+      width: 125px;
+      margin: 5px ;
+      padding: 15px 22px;
+      cursor: pointer;
+      background-color: transparent;
+      border: 0px;
+      outline: none;
+      position: relative;
+      border-radius: 50px;
+    }
+   
+    @media (max-width: 480px) {
+  
+     
+  
+    
+  
+    .toggle-btn {
+      width: 125px;
+      margin: auto;
+      padding: 15px 22px;
+      cursor: pointer;
+      background-color: transparent;
+      border: 0px;
+      outline: none;
+      position: relative;
+      border-radius: 50px;
+    }
+  
+  
+    }
+  
+  
+    .button-box {
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      max-width: 450px;
+      height: 100%;
+      margin: 0px auto;
+     
+      
+    }
+  
+    
+    .button-box .arriba,
+    .button-box .abajo ,
+    .button-box .medio
+     {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 60px;
+      padding: auto;
+      justify-content: center;
+      align-items: center;
+      margin: 2px auto;
+  
+    }
+
+    .button-box .arriba  a ,
+    .button-box .abajo a ,
+    .button-box .medio a
+
+     {
+     
+     width: 100%;
+     height: auto;
+     letter-spacing: 1px;
+     padding: 12px 10px;
+     color:#002918d5;
+     list-style: none;
+     text-decoration: none;
+     font-size: 14px;
+     border-radius: none;
+     margin: 2px 2px;
+     border: 3px solid #002918d5;
+     background-color: transparent;
+     text-align: center;
+     
+      
+  
+    }
+    
+  
+   
+  
+   
+    
+
+  
+  
+  
+  
+   @media (max-width: 335px) {
+  
+   
+  
+   .select-box {
+    display: flex;
+    width: 295px;
+    flex-direction: column;
+  }
+  
+  .button-box {
+    
+    width: 295px;
+  
+  }
+  
+  }
+  
+  input.selected  {
+    padding: 11.5px;
+    font-family: "Yantramanav-thin";
+    font-size: 20px;
+  }
+  
+  input.selected::placeholder {
+  
+   
+    width: 100%;
+    font-size: 16px;
+    font-family: "Yantramanav-thin"; 
+    color: rgb(128, 128, 128);
+  }
+  
+  @media (max-width: 435px) {
+  
+    input.selected  {
+      padding: 15px;
+      font-family: "Yantramanav-regular";
+      font-size: 16px;
+    }
+    
+  
+    input.selected::placeholder {
+  
+      color: rgb(157, 157, 157);
+      width: 100%;
+      font-size: 16px;
+      font-family: "Yantramanav-regular";
+    
+     
+    }
+    
+    .select-box .option,
+    .selected {
+      padding: 15px 16px;
+      cursor: pointer;
+      font-family: "Yantramanav-regular";
+      color: #9e9e9e;
+    
+     }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+/* menus*/
+
+
+
+.menu-completo {
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+
+}
+
+.plato{
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+ 
+}
+
+.plato img {
+  width: 130px;
+  height: 130px ;
+  object-fit:cover;
+  border-radius: 20px;
+  margin: 0px 10px;
+}
+
+.titulo , .precio{
+  font-size: 16px;
+  color: #6e5500;
+  margin: 5px;
+  max-width: 250px;
+}
+.descripcion {
+  font-size: 9px;
+  margin:5px;
+  max-width: 250px;
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    width: 70%;
+    margin: 0px auto;
+
+}
+.titulo-descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#bebidas , #plato-principal , #postres , #compartir , #entrantes , #infuciones {
+
+  width: 100%;
+  margin: auto;
+  scroll-behavior: smooth;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+
+  .contenedor-mapa {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+  }
+
+  iframe.mapa {
+    width: 100%;
+    max-width: 800px;
+    height: 250px ;
+    border-radius: 50px;
+    border: none;
+    margin: 0px 20px ;
+  }
+
+
+
+  /* Botones REDES*/
+
+
+button img {
+  width: 30px;
+  height: 30px;
+}
+
+
+a.boton img {
+width: 100px;
+height: 100px;
+
+}
+.form-group input:focus ,
+.form-group textarea:focus {
+outline: none;
+background-color: rgba(0, 56, 177, 0.692);
+color: white;
+}
+
+
+.log {
+display: flex;
+flex-direction: column;
+width: 100%;
+justify-content: center;
+margin: 20px auto;
+align-items: center;
+}
+
+.caja {
+   margin: 10px 25px ;
+   color:rgb(0, 0, 0);
+
+}
+
+.direccion , .abierto , .movil , .horario{
+  display: flex;
+  margin: 20px 0px;
+  color:rgb(0, 0, 0);
+  
+}
+
+.caja svg {
+ width: 30px ;
+ margin: -10px 15px;
+color: rgb(0, 0, 0);
+}
+
+
+.redes-sociales{
+    
+  padding: 80px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.redes-item {
+  padding: 0px 20px;
+}
+
+.log img {
+  width: 90;
+  height: 65;
+}
+
+.tienda img {
+  width: 65px;
+}
+
+.log a {
+  margin: 15px 0px ;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.alergenicos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 0px 15px 0px;
+
+}
+.alergenicos img{
+  width: 35px;
+  height: 45px;
+
+}
+
+
+
+
+
+
+
+.glovo img {
+  width: 100%;
+  height: 40px;
+  object-fit: cover;
+
+ }
+ 
+ 
+ 
+ .uber img {
+   width: 100%;
+   height: 40px;
+   object-fit: cover;
+ 
+  
+ }
+ a.uber {
+   margin: 0px 5px;
+ }
+ 
+ .just img{
+   width: 100%;
+  height: 40px;
+  object-fit: cover;
+ 
+ }
+ 
+ 
+ 
+ .glovo img:hover , .uber img:hover , .just img:hover {
+ 
+   border: 5px solid rgb(255, 255, 255);
+  
+   }
+ 
+ 
+   .plataformas {
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+    width: 99%;
+    max-width: 500px;
+    justify-content: center;
+  
+  
+  }
+  
+  .plataformas a {
+    text-align: center;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 0px;
+    margin: 0px 2px ;
+  }
+  
+  
+ 
+ 

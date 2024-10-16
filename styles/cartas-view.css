@@ -1,0 +1,159 @@
+
+
+
+
+  main {
+    height: auto;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 100px;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat";
+
+  }
+
+  main h1 {
+      text-align: center;
+      margin: 30px auto;
+      font-size: 20px;
+      color: black;
+      font-family: "Montserrat";
+
+  }
+
+  .proyectos {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .proyecto {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      margin: 20px 30px;
+      text-align: center;
+   
+
+    }
+
+    a.boton{
+       padding: 8px 2px;
+       background-color: rgba(255, 255, 255, 0.376);
+       border: 5px solid rgba(0, 0, 0, 0);
+       text-decoration: none;
+       list-style: none;
+       color: rgb(255, 255, 255);
+       margin: 15px 0px;
+  }
+    
+
+.proyectos img {
+    width: 120px ;
+    height: 120px ;
+    margin: 10px;
+
+}
+
+
+@media (max-width: 600px) {
+
+
+
+    .proyectos {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+       justify-content: center;
+    }
+  
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        margin: 20px 30px;
+        text-align: center;
+     
+  
+      }
+
+}
+
+                    
+
+
+
+
+
+.titulo {
+display: flex;
+justify-content: center;
+margin: 10px 20px;
+}
+
+.parrafo {
+margin: 10px 20px;
+letter-spacing: 1px ;
+text-align: center;
+}
+
+.botones {
+display: flex;
+flex-direction: column;
+margin: 20px 20px;
+justify-content: center;
+text-align: center;
+}
+
+.botones a {
+
+padding: 15px 50px ;
+display: flex;
+justify-content:  center;
+align-items: center;
+margin: 8px;
+list-style: none;
+text-decoration: none;
+color: #000000;
+border: none;
+background-color: #0000002a;
+text-align: center;
+
+}
+
+
+
+a.bandera {
+border: none;
+background-color: #ffffff00;
+
+}
+p {
+color: rgb(0, 0, 0);
+margin: 25px auto;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
